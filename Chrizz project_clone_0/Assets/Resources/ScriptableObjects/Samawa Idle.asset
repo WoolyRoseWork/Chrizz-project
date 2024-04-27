@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f057d3fd6c0581f4cb0994d36e2732ef, type: 3}
+  m_Name: Samawa Idle
+  m_EditorClassIdentifier: 
+  GameName: Samawa Idle
+  ExecuteName: Samawa Idle.exe
+  GameImage: {fileID: 21300000, guid: 0c0b6a346903f1c4c850a50c6203d28a, type: 3}
+  FileLocation: E:\SteamLibrary\steamapps\common\Samawa Idle\Release
+  minPlayers: 1
+  maxPlayers: 1
