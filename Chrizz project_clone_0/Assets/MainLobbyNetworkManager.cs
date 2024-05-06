@@ -5,19 +5,24 @@ using UnityEngine;
 
 public class MainLobbyNetworkManager : NetworkManager
 {
-    [SerializeField] private GameUIManager GameManager;
+    [SerializeField] private GameUIManager GameUIManager;
+    [SerializeField] private PlayerGamesSelector playerSelector;
+   
     public override void OnStartServer()
     {
+        GameManager.Instance.LoadGames();
         Debug.Log("I am a server");
     }
 
     public override void OnStartClient()
     {
-        Debug.Log("I am a cliuent");
+        GameManager.Instance.LoadGames();
+        playerSelector.OnPlayerJoin();
     }
 
     public override void OnServerConnect(NetworkConnectionToClient conn)
     {
-        GameManager.AddPlayer(conn);
+        GameUIManager.AddPlayer(conn);
+    
     }
 }

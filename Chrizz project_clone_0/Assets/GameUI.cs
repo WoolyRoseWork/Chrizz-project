@@ -44,7 +44,7 @@ public class GameUI : MonoBehaviour
 
     public void SetValues(GameSO gameStats)
     {
-        //image.sprite = gameStats?.GameImage;
+        image.sprite = gameStats?.GameImage;
         GameName.text = gameStats?.GameName;
 
         game = gameStats;

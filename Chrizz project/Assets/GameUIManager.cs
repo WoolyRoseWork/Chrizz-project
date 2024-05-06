@@ -15,10 +15,7 @@ public class GameUIManager : MonoBehaviour
     }
     private void Start()
     {
-        GameSO[] objects = JSONWriter.GenerateAllScriptableObjects();
-        Debug.Log(objects.Length);
-
-        foreach (GameSO obj in objects)
+        foreach (GameSO obj in GameManager.Instance.games)
         {
             CreateGameUI(obj);
         }
